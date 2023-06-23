@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.okhotelbooking.Receipt">
+   <children>
+      <Label alignment="CENTER" layoutX="-4.0" prefHeight="56.0" prefWidth="600.0" text="Receipt">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="152.0" text="Check In Date :" />
+      <Label layoutX="39.0" layoutY="95.0" text="Phone Number :" />
+      <Label layoutX="88.0" layoutY="57.0" text="Name :" />
+      <Label layoutX="91.0" layoutY="114.0" text="Email :" />
+      <Label layoutX="81.0" layoutY="133.0" text="Gender :" />
+      <Label layoutX="37.0" layoutY="171.0" text="Check Out Date :" />
+      <Label layoutX="46.0" layoutY="291.0" />
+      <Label layoutX="397.0" layoutY="328.0" text="Total Price :" />
+      <Label layoutX="360.0" layoutY="309.0" text="Service Tax (10%) :" />
+      <Label layoutX="312.0" layoutY="290.0" text="Tourism Tax (RM10/Night) :" />
+      <Button layoutX="153.0" layoutY="358.0" mnemonicParsing="false" onAction="#Close" text="Close" />
+      <Button layoutX="354.0" layoutY="358.0" mnemonicParsing="false" onAction="#printPNG" text="Print As PNG" />
+      <Label layoutX="360.0" layoutY="84.0" prefHeight="17.0" prefWidth="215.0" text="Blok B (Utara), Pusat Bandar Damansara," />
+      <Label alignment="CENTER" layoutX="54.0" layoutY="193.0" prefHeight="20.0" prefWidth="84.0" style="-fx-border-color: black;" text="Room" />
+      <Label layoutX="405.0" layoutY="271.0" text="SubTotal :" />
+      <Label alignment="CENTER" layoutX="137.0" layoutY="193.0" prefHeight="20.0" prefWidth="135.0" style="-fx-border-color: black;" text="Total Date" />
+      <Label fx:id="room" alignment="CENTER" layoutX="54.0" layoutY="212.0" prefHeight="20.0" prefWidth="84.0" style="-fx-border-color: black;" />
+      <Label alignment="CENTER" layoutX="54.0" layoutY="231.0" prefHeight="20.0" prefWidth="84.0" style="-fx-border-color: black;" />
+      <Label alignment="CENTER" layoutX="54.0" layoutY="250.0" prefHeight="20.0" prefWidth="84.0" style="-fx-border-color: black;" />
+      <Label fx:id="totaldate" alignment="CENTER" layoutX="137.0" layoutY="212.0" prefHeight="20.0" prefWidth="135.0" style="-fx-border-color: black;" />
+      <Label alignment="CENTER" layoutX="137.0" layoutY="231.0" prefHeight="20.0" prefWidth="135.0" style="-fx-border-color: black;" />
+      <Label alignment="CENTER" layoutX="137.0" layoutY="250.0" prefHeight="20.0" prefWidth="135.0" style="-fx-border-color: black;" />
+      <Label alignment="CENTER" layoutX="271.0" layoutY="193.0" prefHeight="20.0" prefWidth="146.0" style="-fx-border-color: black;" text="Price per night (RM)" />
+      <Label layoutX="360.0" layoutY="64.0" text="OK Booking Hotel">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="360.0" layoutY="101.0" prefHeight="17.0" prefWidth="215.0" text="50530, Wilayah Persekutuan," />
+      <Label layoutX="357.0" layoutY="117.0" text=" Kuala Lumpur" />
+      <Label layoutX="109.0" layoutY="76.0" text="IC :" />
+      <Label fx:id="name" layoutX="132.0" layoutY="57.0" />
+      <Label fx:id="ic" layoutX="132.0" layoutY="76.0" />
+      <Label fx:id="phone" layoutX="132.0" layoutY="95.0" />
+      <Label fx:id="email" layoutX="132.0" layoutY="114.0" />
+      <Label fx:id="gender" layoutX="132.0" layoutY="133.0" />
+      <Label fx:id="checkin" layoutX="132.0" layoutY="152.0" />
+      <Label fx:id="checkout" layoutX="132.0" layoutY="171.0" />
+      <Label alignment="CENTER" layoutX="416.0" layoutY="193.0" prefHeight="20.0" prefWidth="127.0" style="-fx-border-color: black;" text="Total (RM)" />
+      <Label fx:id="OnePrice" alignment="CENTER" layoutX="271.0" layoutY="212.0" prefHeight="20.0" prefWidth="146.0" style="-fx-border-color: black;" />
+      <Label alignment="CENTER" layoutX="271.0" layoutY="231.0" prefHeight="20.0" prefWidth="146.0" style="-fx-border-color: black;" />
+      <Label alignment="CENTER" layoutX="271.0" layoutY="250.0" prefHeight="20.0" prefWidth="146.0" style="-fx-border-color: black;" />
+      <Label fx:id="total" alignment="CENTER" layoutX="416.0" layoutY="212.0" prefHeight="20.0" prefWidth="127.0" style="-fx-border-color: black;" />
+      <Label fx:id="total1" alignment="CENTER" layoutX="416.0" layoutY="231.0" prefHeight="20.0" prefWidth="127.0" style="-fx-border-color: black;" />
+      <Label fx:id="total11" alignment="CENTER" layoutX="416.0" layoutY="250.0" prefHeight="20.0" prefWidth="127.0" style="-fx-border-color: black;" />
+      <Label fx:id="Subtotal" layoutX="466.0" layoutY="271.0" />
+      <Label fx:id="TourismTax" layoutX="466.0" layoutY="290.0" />
+      <Label fx:id="ServiceTax" layoutX="466.0" layoutY="309.0" />
+      <Label fx:id="totalprice" layoutX="466.0" layoutY="328.0" />
+      <Label layoutX="360.0" layoutY="142.0" text="OKHotel@gmail.com" />
+      <Label layoutX="360.0" layoutY="162.0" text="www.OKHotel.com.my" />
+   </children>
+</AnchorPane>

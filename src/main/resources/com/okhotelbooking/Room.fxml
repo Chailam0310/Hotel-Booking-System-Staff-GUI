@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.okhotelbooking.RoomController">
+   <children>
+      <AnchorPane fx:id="pane" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="RoomA2" alignment="CENTER" layoutX="124.0" layoutY="50.0" mnemonicParsing="false" onAction="#popForm" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: BLUE; -fx-border-color: BLACK;" text="A2" textFill="WHITE" />
+            <Button fx:id="RoomA1" alignment="CENTER" layoutX="14.0" layoutY="50.0" mnemonicParsing="false" onAction="#popForm" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: BLUE; -fx-border-color: BLACK;" text="A1" textFill="WHITE" />
+            <Button fx:id="RoomA6" alignment="CENTER" layoutX="14.0" layoutY="164.0" mnemonicParsing="false" onAction="#popForm" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: BLUE; -fx-border-color: BLACK;" text="A6" textFill="WHITE" />
+            <Button fx:id="RoomA7" alignment="CENTER" layoutX="124.0" layoutY="164.0" mnemonicParsing="false" onAction="#popForm" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: BLUE; -fx-border-color: BLACK;" text="A7" textFill="WHITE" />
+            <Button fx:id="previousButton" layoutX="197.0" layoutY="11.0" mnemonicParsing="false" onAction="#changeRoomPage1" prefWidth="31.0" text="&lt;" />
+            <Button fx:id="nextbutton" layoutX="237.0" layoutY="11.0" mnemonicParsing="false" onAction="#changeRoomPage2" prefHeight="25.0" prefWidth="31.0" text="&gt;" />
+            <Button fx:id="RoomA3" alignment="CENTER" layoutX="234.0" layoutY="50.0" mnemonicParsing="false" onAction="#popForm" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: BLUE; -fx-border-color: BLACK;" text="A3" textFill="WHITE" />
+            <Button fx:id="RoomA4" alignment="CENTER" layoutX="344.0" layoutY="50.0" mnemonicParsing="false" onAction="#popForm" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: BLUE; -fx-border-color: BLACK;" text="A4" textFill="WHITE" />
+            <Button fx:id="RoomA5" alignment="CENTER" layoutX="454.0" layoutY="50.0" mnemonicParsing="false" onAction="#popForm" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: BLUE; -fx-border-color: BLACK;" text="A5" textFill="WHITE" />
+            <Button fx:id="RoomA8" alignment="CENTER" layoutX="234.0" layoutY="164.0" mnemonicParsing="false" onAction="#popForm" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: BLUE; -fx-border-color: BLACK;" text="A8" textFill="WHITE" />
+            <Button fx:id="RoomA9" alignment="CENTER" layoutX="344.0" layoutY="164.0" mnemonicParsing="false" onAction="#popForm" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: BLUE; -fx-border-color: BLACK;" text="A9" textFill="WHITE" />
+            <Button fx:id="RoomA10" alignment="CENTER" layoutX="453.0" layoutY="164.0" mnemonicParsing="false" onAction="#popForm" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: BLUE; -fx-border-color: BLACK;" text="A10" textFill="WHITE" />
+            <Circle fill="DODGERBLUE" layoutX="29.0" layoutY="300.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+            <DatePicker fx:id="datePicker" layoutX="13.0" layoutY="11.0" onAction="#changeColorByDate" prefWidth="180.0" />
+            <Circle fill="#bbbb00" layoutX="29.0" layoutY="326.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label layoutX="45.0" layoutY="290.0" text="Available">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="45.0" layoutY="316.0" text="Unavailable">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Button fx:id="RefreshButton" layoutX="276.0" layoutY="11.0" mnemonicParsing="false" onAction="#Refresh" prefHeight="25.0" prefWidth="61.0" text="Refresh" />
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.okhotelbooking.TransactionController">
+   <children>
+      <TableView fx:id="TransactionTable" layoutX="6.0" layoutY="14.0" prefHeight="379.0" prefWidth="631.0">
+        <columns>
+          <TableColumn fx:id="NameColumn" prefWidth="85.33334636688232" text="Name" />
+          <TableColumn fx:id="ICColumn" prefWidth="101.33333587646484" text="IC" />
+            <TableColumn fx:id="RoomColumn" prefWidth="50.0" text="Room" />
+            <TableColumn fx:id="CheckInColumn" prefWidth="90.66670227050781" text="CheckIn Date" />
+            <TableColumn fx:id="CheckOutColumn" prefWidth="96.0" text="CheckOut Date" />
+            <TableColumn fx:id="TotalDateColumn" prefWidth="71.3333740234375" text="Total Date" />
+            <TableColumn fx:id="PriceColumn" prefWidth="73.99996948242188" text="Price" />
+            <TableColumn fx:id="PaymentColumn" prefWidth="58.0" text="Payment" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
